@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - ROVOK</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header class="sticky-top shadow-sm bg-white border-bottom">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand fw-bold brand-logo" href="index.html">ROVOK</a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="products.html">Shop All</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="products.html?category=tote">Totes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="products.html?category=crossbody">Crossbody</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="products.html?category=clutch">Clutches</a>
+                        </li>
+                    </ul>
+                    
+                    <div class="d-flex align-items-center">
+                        <div class="search-box me-3 d-none d-md-block">
+                            <input type="text" class="form-control" placeholder="Search...">
+                        </div>
+                        <div class="icons-wrapper d-flex">
+                            <a href="login.html" class="nav-icon me-3"><i class="fas fa-user"></i></a>
+                            <a href="wishlist.html" class="nav-icon me-3"><i class="fas fa-heart"></i></a>
+                            <a href="cart.html" class="nav-icon position-relative">
+                                <i class="fas fa-shopping-bag"></i>
+                                <span class="cart-count">0</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container py-5">
+            <h1 class="text-center mb-5">Contact Us</h1>
+            
+            <div class="row g-5">
+                <div class="col-lg-6">
+                    <div class="contact-info p-4 border rounded bg-light h-100">
+                        <h3 class="h4 mb-4">We'd Love to Hear From You</h3>
+                        <p>Have questions about our products, shipping, or returns? Our customer support team is here to help!</p>
+                        
+                        <div class="mt-4">
+                            <h4 class="h5 mb-3">Contact Information</h4>
+                            <ul class="list-unstyled">
+                                <li class="mb-3">
+                                    <i class="fas fa-map-marker-alt me-2 text-gold"></i> 
+                                    <span>Near Dwarka Mor,Delhi-110075</span>
+                                </li>
+                                <li class="mb-3">
+                                    <i class="fas fa-phone me-2 text-gold"></i> 
+                                    <span>(+91) 9996273595</span>
+                                </li>
+                                <li class="mb-3">
+                                    <i class="fas fa-envelope me-2 text-gold"></i> 
+                                    <span>support@rovok.com</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="mt-4">
+                            <h4 class="h5 mb-3">Business Hours</h4>
+                            <ul class="list-unstyled">
+                                <li class="mb-2">Monday - Friday: 9:00 AM - 6:00 PM EST</li>
+                                <li class="mb-2">Saturday: 10:00 AM - 4:00 PM EST</li>
+                                <li>Sunday: Closed</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="mt-4">
+                            <h4 class="h5 mb-3">Follow Us</h4>
+                            <div class="social-icons">
+                                <a href="#" class="social-icon me-3"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="social-icon me-3"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="social-icon me-3"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="social-icon"><i class="fab fa-pinterest"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="contact-form p-4 border rounded">
+                        <h3 class="h4 mb-4">Send Us a Message</h3>
+                        <form id="contact-form">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Full Name</label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="subject" class="form-label">Subject</label>
+                                <input type="text" class="form-control" id="subject" required>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" rows="5" required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-gold">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-5 pt-4">
+                <h3 class="h4 mb-4">Frequently Asked Questions</h3>
+                <div class="accordion" id="faqAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                How can I track my order?
+                            </button>
+                        </h2>
+                        <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Once your order has been shipped, you will receive a shipping confirmation email with a tracking number. You can use this tracking number on our website or the carrier's website to track your package.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                What is your return policy?
+                            </button>
+                        </h2>
+                        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                We offer a 30-day return policy for all unused and unworn items. Please visit our <a href="shipping.html">Shipping & Returns</a> page for more details.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                Do you ship internationally?
+                            </button>
+                        </h2>
+                        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Yes, we ship to most countries worldwide. International shipping rates and delivery times vary depending on the destination. Shipping costs will be calculated at checkout.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer bg-light border-top py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="footer-title text-gold">ROVOK</h3>
+                    <p class="text-muted">Your destination for luxury handbags at affordable prices.</p>
+                    <div class="social-icons mt-3">
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="footer-title">Shop</h4>
+                    <ul class="footer-links">
+                        <li><a href="products.html">All Products</a></li>
+                        <li><a href="products.html?category=tote">Tote Bags</a></li>
+                        <li><a href="products.html?category=crossbody">Crossbody Bags</a></li>
+                        <li><a href="products.html?category=clutch">Clutches</a></li>
+                        <li><a href="products.html?category=wallet">Wallets</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="footer-title">Help</h4>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="shipping.html">Shipping & Returns</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="footer-title">Subscribe</h4>
+                    <p class="text-muted">Subscribe to our newsletter for the latest updates and exclusive offers.</p>
+                    <div class="input-group mt-3">
+                        <input type="email" class="form-control" placeholder="Your email">
+                        <button class="btn btn-gold" type="button">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-12 text-center">
+                    <p class="text-muted mb-0">&copy; <span id="current-year"></span> ROVOK. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="js/script.js"></script>
+    <script>
+        // Contact form submission
+        const contactForm = document.getElementById('contact-form');
+        
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Get form values
+                const name = document.getElementById('name').value.trim();
+                const email = document.getElementById('email').value.trim();
+                const subject = document.getElementById('subject').value.trim();
+                const message = document.getElementById('message').value.trim();
+                
+                // Simulate form submission
+                contactForm.innerHTML = '<div class="text-center"><div class="spinner-border text-gold" role="status"><span class="visually-hidden">Loading...</span></div><p class="mt-3">Sending your message...</p></div>';
+                
+                setTimeout(() => {
+                    contactForm.innerHTML = '<div class="text-center"><div class="bg-success text-white p-4 rounded"><i class="fas fa-check-circle fa-3x mb-3"></i><h4>Thank You!</h4><p>Your message has been sent successfully. We\'ll get back to you shortly.</p></div></div>';
+                }, 1500);
+            });
+        }
+    </script>
+</body>
+</html>

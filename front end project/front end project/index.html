@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PurseBoutique - Elegant Handbags Collection</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header class="sticky-top shadow-sm bg-white border-bottom">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand fw-bold brand-logo" href="index.html">ROVOK</a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="products.html">Shop All</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="products.html?category=tote">Totes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="products.html?category=crossbody">Crossbody</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="products.html?category=clutch">Clutches</a>
+                        </li>
+                    </ul>
+                    
+                    <div class="d-flex align-items-center">
+                        <div class="search-box me-3 d-none d-md-block">
+                            <input type="text" class="form-control" placeholder="Search...">
+                        </div>
+                        <div class="icons-wrapper d-flex">
+                            <a href="login.html" class="nav-icon me-3"><i class="fas fa-user"></i></a>
+                            <a href="wishlist.html" class="nav-icon me-3"><i class="fas fa-heart"></i></a>
+                            <a href="cart.html" class="nav-icon position-relative">
+                                <i class="fas fa-shopping-bag"></i>
+                                <span class="cart-count">0</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <h1 class="display-4 fw-bold mb-4">Elegance in Every<br><span class="text-gold">Handbag</span></h1>
+                    <p class="lead mb-4">Discover our premium collection of designer handbags that combine style, quality, and affordability. Find the perfect bag for any occasion.</p>
+                    <div class="d-flex flex-wrap gap-2 justify-content-center justify-content-md-start">
+                        <a href="products.html" class="btn btn-gold btn-lg">Shop Now</a>
+                        <a href="products.html?category=new" class="btn btn-outline-gold btn-lg">New Arrivals</a>
+                    </div>
+                </div>
+                <div class="col-md-6 mt-5 mt-md-0">
+                    <div class="position-relative">
+                        <img src="https://images.unsplash.com/photo-1566150905458-1bf1fc113f0d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Elegant handbag collection" class="img-fluid rounded-3 shadow">
+                        <div class="position-absolute free-shipping-tag">
+                            <p class="small fw-medium">Free shipping on orders over ₹1000</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Category Section -->
+    <section class="category-section bg-light py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Shop By Category</h2>
+            <div class="row g-4">
+                <div class="col-6 col-md-3">
+                    <a href="products.html?category=tote" class="category-card">
+                        <div class="category-img-container">
+                            <img src="tote.png" alt="Tote Bags" class="img-fluid">
+                        </div>
+                        <h3 class="category-title">Tote Bags</h3>
+                    </a>
+                </div>
+                <div class="col-6 col-md-3">
+                    <a href="products.html?category=crossbody" class="category-card">
+                        <div class="category-img-container">
+                            <img src="Screenshot 2025-04-08 063027.png" alt="Crossbody Bags" class="img-fluid">
+                        </div>
+                        <h3 class="category-title">Crossbody Bags</h3>
+                    </a>
+                </div>
+                <div class="col-6 col-md-3">
+                    <a href="products.html?category=clutch" class="category-card">
+                        <div class="category-img-container">
+                            <img src="multicolor.png" alt="Clutches" class="img-fluid">
+                        </div>
+                        <h3 class="category-title">Clutches</h3>
+                    </a>
+                </div>
+                <div class="col-6 col-md-3">
+                    <a href="products.html?category=wallet" class="category-card">
+                        <div class="category-img-container">
+                            <img src="bwhiteblackstrip.png" alt="Wallets" class="img-fluid">
+                        </div>
+                        <h3 class="category-title">Wallets</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section class="featured-products py-5">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center mb-5">
+                <h2 class="section-title">Featured Products</h2>
+                <a href="products.html" class="view-all">View All</a>
+            </div>
+            <div class="row g-4" id="featured-products">
+                <!-- Products will be loaded via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center">
+                    <h2 class="section-title mb-3">Stay Updated</h2>
+                    <p class="mb-4">Subscribe to our newsletter for exclusive offers, new arrivals, and styling tips.</p>
+                    <form id="newsletter-form" class="newsletter-form">
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Your email address" required>
+                            <button class="btn btn-gold" type="submit" id="subscribe-btn">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-light border-top py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="footer-title text-gold">ROVOK</h3>
+                    <p class="text-muted">Your destination for luxury handbags at affordable prices.</p>
+                    <div class="social-icons mt-3">
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="footer-title">Shop</h4>
+                    <ul class="footer-links">
+                        <li><a href="products.html">All Products</a></li>
+                        <li><a href="products.html?category=tote">Tote Bags</a></li>
+                        <li><a href="products.html?category=crossbody">Crossbody Bags</a></li>
+                        <li><a href="products.html?category=clutch">Clutches</a></li>
+                        <li><a href="products.html?category=wallet">Wallets</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="footer-title">Help</h4>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="shipping.html">Shipping & Returns</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="footer-title">Subscribe</h4>
+                    <p class="text-muted">Subscribe to our newsletter for the latest updates and exclusive offers.</p>
+                    <div class="input-group mt-3">
+                        <input type="email" class="form-control" placeholder="Your email">
+                        <button class="btn btn-gold" type="button">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-12 text-center">
+                    <p class="text-muted mb-0">&copy; <span id="current-year"></span> ROVOK. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="js/products.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

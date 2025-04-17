@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shipping & Returns - PurseBoutique</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header class="sticky-top shadow-sm bg-white border-bottom">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand fw-bold brand-logo" href="index.html">ROVOK</a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="products.html">Shop All</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="products.html?category=tote">Totes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="products.html?category=crossbody">Crossbody</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="products.html?category=clutch">Clutches</a>
+                        </li>
+                    </ul>
+                    
+                    <div class="d-flex align-items-center">
+                        <div class="search-box me-3 d-none d-md-block">
+                            <input type="text" class="form-control" placeholder="Search...">
+                        </div>
+                        <div class="icons-wrapper d-flex">
+                            <a href="login.html" class="nav-icon me-3"><i class="fas fa-user"></i></a>
+                            <a href="wishlist.html" class="nav-icon me-3"><i class="fas fa-heart"></i></a>
+                            <a href="cart.html" class="nav-icon position-relative">
+                                <i class="fas fa-shopping-bag"></i>
+                                <span class="cart-count">0</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container py-5">
+            <h1 class="text-center mb-5">Shipping & Returns</h1>
+            
+            <div class="row g-5">
+                <!-- Shipping Information -->
+                <div class="col-lg-6">
+                    <div class="bg-light p-4 rounded h-100">
+                        <h2 class="h3 mb-4 text-gold">Shipping Information</h2>
+                        
+                        <div class="mb-4">
+                            <h3 class="h5 mb-3">Shipping Options</h3>
+                            <p>At PurseBoutique, we offer several shipping options to meet your needs:</p>
+                            
+                            <div class="table-responsive">
+                                <table class="table table-bordered">
+                                    <thead class="table-light">
+                                        <tr>
+                                            <th>Shipping Method</th>
+                                            <th>Estimated Delivery</th>
+                                            <th>Cost</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Standard Shipping</td>
+                                            <td>5-7 business days</td>
+                                            <td>$5.95 (FREE on orders over $75)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Expedited Shipping</td>
+                                            <td>2-3 business days</td>
+                                            <td>$12.95</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Express Shipping</td>
+                                            <td>1-2 business days</td>
+                                            <td>$19.95</td>
+                                        </tr>
+                                        <tr>
+                                            <td>International Shipping</td>
+                                            <td>10-14 business days</td>
+                                            <td>Varies by location</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <p class="mt-2 small text-muted">Delivery times are estimates and begin from the date of shipping, not the date of order.</p>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <h3 class="h5 mb-3">Order Processing</h3>
+                            <p>All orders are processed within 1-2 business days after payment confirmation. Orders placed after 1:00 PM EST may not be processed until the next business day. Orders placed on weekends or holidays will be processed on the next business day.</p>
+                            <p>You will receive a shipping confirmation email with tracking information once your order has shipped.</p>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <h3 class="h5 mb-3">International Shipping</h3>
+                            <p>We ship to most countries worldwide. International shipping costs are calculated at checkout based on destination and package weight.</p>
+                            <p>Please note that international orders may be subject to:</p>
+                            <ul>
+                                <li>Customs duties and taxes</li>
+                                <li>Import fees</li>
+                                <li>Customs clearance delays</li>
+                            </ul>
+                            <p>These fees are not included in the purchase price and are the responsibility of the recipient. We cannot predict which orders will incur these additional charges as they vary by country.</p>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <h3 class="h5 mb-3">Tracking Your Order</h3>
+                            <p>Once your order ships, you will receive a shipping confirmation email with tracking information. You can also track your order by:</p>
+                            <ul>
+                                <li>Logging into your account and viewing your order history</li>
+                                <li>Using the "Track Order" feature on our website</li>
+                                <li>Contacting our customer service team</li>
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <h3 class="h5 mb-3">Shipping Restrictions</h3>
+                            <p>We are unable to ship to P.O. boxes for expedited and express shipping methods. We also cannot ship to certain international locations due to shipping restrictions. If you're unsure if we ship to your location, please contact customer service before placing an order.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Returns and Exchanges -->
+                <div class="col-lg-6">
+                    <div class="bg-light p-4 rounded h-100">
+                        <h2 class="h3 mb-4 text-gold">Returns & Exchanges</h2>
+                        
+                        <div class="mb-4">
+                            <h3 class="h5 mb-3">Return Policy</h3>
+                            <p>We want you to be completely satisfied with your purchase. If you're not happy with your order, we offer a 30-day return policy from the date of delivery under the following conditions:</p>
+                            <ul>
+                                <li>Items must be unused, unworn, and in the original condition</li>
+                                <li>All tags and original packaging must be intact</li>
+                                <li>Proof of purchase is required (order number, receipt, or confirmation email)</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <h3 class="h5 mb-3">Items Not Eligible for Return</h3>
+                            <p>The following items cannot be returned unless they are defective:</p>
+                            <ul>
+                                <li>Personalized or customized items</li>
+                                <li>Items marked as "Final Sale" or "Non-Returnable"</li>
+                                <li>Gift cards</li>
+                                <li>Intimate accessories (cosmetic bags, purse organizers, etc.)</li>
+                                <li>Items damaged due to customer misuse</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <h3 class="h5 mb-3">How to Initiate a Return</h3>
+                            <p>To start a return:</p>
+                            <ol>
+                                <li>Log into your account and go to "Order History"</li>
+                                <li>Find the order containing the item(s) you wish to return</li>
+                                <li>Click "Return Items" and follow the instructions</li>
+                                <li>Print the prepaid return shipping label</li>
+                                <li>Package the item(s) securely in original packaging if possible</li>
+                                <li>Attach the return label and drop off at the specified carrier</li>
+                            </ol>
+                            <p>If you don't have an account or need assistance, contact our customer service team for help.</p>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <h3 class="h5 mb-3">Return Shipping</h3>
+                            <p>For domestic returns, we provide a prepaid return shipping label. A fee of $6.95 will be deducted from your refund to cover the return shipping cost, unless the return is due to our error or a defective item.</p>
+                            <p>For international returns, customers are responsible for return shipping costs and must use a trackable shipping method.</p>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <h3 class="h5 mb-3">Refund Process</h3>
+                            <p>Once we receive your return, it will be inspected within 3-5 business days. If approved, your refund will be processed and automatically applied to your original payment method. Please allow 5-10 business days for the refund to appear on your statement, depending on your payment provider's policies.</p>
+                            <p>You will receive an email notification when your return has been processed.</p>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <h3 class="h5 mb-3">Exchanges</h3>
+                            <p>We are happy to exchange items for a different size, color, or style. To request an exchange, follow the same process as initiating a return, but select "Exchange" instead of "Return" and specify the item you'd like in exchange.</p>
+                            <p>If the new item costs more than the original, you'll be charged the difference. If it costs less, you'll receive a refund for the difference.</p>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <h3 class="h5 mb-3">Damaged or Defective Items</h3>
+                            <p>If you receive a damaged or defective item, please contact our customer service team within 48 hours of delivery. Provide your order number and photos of the damage. We'll arrange for a return, replacement, or refund at no cost to you.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- FAQ Section -->
+            <div class="mt-5 pt-3">
+                <h2 class="h3 mb-4 text-center">Frequently Asked Questions</h2>
+                
+                <div class="accordion" id="shippingReturnsAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                How do I know when my order has shipped?
+                            </button>
+                        </h2>
+                        <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#shippingReturnsAccordion">
+                            <div class="accordion-body">
+                                You will receive a shipping confirmation email with tracking information once your order has shipped. You can also check the status of your order by logging into your account and viewing your order history.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                Can I change my shipping address after placing an order?
+                            </button>
+                        </h2>
+                        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#shippingReturnsAccordion">
+                            <div class="accordion-body">
+                                Address changes can only be made if the order has not yet been processed. Please contact our customer service team immediately if you need to change your shipping address. Once an order has been processed or shipped, the address cannot be changed.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                What if my package is lost or stolen?
+                            </button>
+                        </h2>
+                        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#shippingReturnsAccordion">
+                            <div class="accordion-body">
+                                If your tracking information shows that your package was delivered but you haven't received it, please contact our customer service team within 48 hours of the delivery date. We'll work with the shipping carrier to resolve the issue. For packages marked as delivered, we recommend checking with neighbors, building management, or your local post office before reporting it as missing.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                Can I return a gift?
+                            </button>
+                        </h2>
+                        <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#shippingReturnsAccordion">
+                            <div class="accordion-body">
+                                Yes, gifts can be returned. If you received a gift from our store, you can return it for store credit or exchange it for another item. You'll need the order number from the gift receipt or the email address of the person who purchased the gift. Contact our customer service team for assistance with gift returns.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                                How do I return an item if I don't have the original packaging?
+                            </button>
+                        </h2>
+                        <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#shippingReturnsAccordion">
+                            <div class="accordion-body">
+                                While we prefer returns to be in the original packaging, we understand that this isn't always possible. If you don't have the original packaging, please package the item securely in appropriate packaging to ensure it's protected during transit. Include a note with your order number and return reason. Please note that the item must still be in new, unused condition with all tags attached.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Contact Section -->
+            <div class="mt-5 pt-3 text-center">
+                <p class="mb-3">If you have any questions about our shipping or return policies, please don't hesitate to contact us.</p>
+                <a href="contact.html" class="btn btn-gold">Contact Customer Service</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer bg-light border-top py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="footer-title text-gold">ROVOK</h3>
+                    <p class="text-muted">Your destination for luxury handbags at affordable prices.</p>
+                    <div class="social-icons mt-3">
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="footer-title">Shop</h4>
+                    <ul class="footer-links">
+                        <li><a href="products.html">All Products</a></li>
+                        <li><a href="products.html?category=tote">Tote Bags</a></li>
+                        <li><a href="products.html?category=crossbody">Crossbody Bags</a></li>
+                        <li><a href="products.html?category=clutch">Clutches</a></li>
+                        <li><a href="products.html?category=wallet">Wallets</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="footer-title">Help</h4>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="shipping.html">Shipping & Returns</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="footer-title">Subscribe</h4>
+                    <p class="text-muted">Subscribe to our newsletter for the latest updates and exclusive offers.</p>
+                    <div class="input-group mt-3">
+                        <input type="email" class="form-control" placeholder="Your email">
+                        <button class="btn btn-gold" type="button">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-12 text-center">
+                    <p class="text-muted mb-0">&copy; <span id="current-year"></span> ROVOK. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
